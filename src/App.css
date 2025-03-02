@@ -1,5 +1,5 @@
 .App {
-  width: 60%;
+  width: 80%;
   /* padding-top: 1.5rem; */
   margin: 1.5rem auto;
 }
@@ -32,11 +32,22 @@
 .projectList {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  align-items: flex-start;
+  /* width: 80%; */
+  /* flex-flow: column wrap;   */
+  /* max-height: 100vh; */
+  gap: 16px;
 }
 
+/* .projectList-item:nth-child(3n+1) { order: 1;}
+.projectList-item:nth-child(3n+2) { order: 2;}
+.projectList-item:nth-child(3n+3) { order: 3;} */
+
 .projectList-item {
-  display: flex;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  /* display: inline; */
+  flex-shrink: 0;
+  flex-grow: 0; 
+  flex-basis: auto; 
+  /* width: 21%;  */
+  width: calc(33.33% - 16px); 
 }
